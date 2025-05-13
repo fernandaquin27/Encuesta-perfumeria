@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Comic Relief", system-ui;
+}
+body {
+    background-size: cover;
+    background-image: url(../img/41521.jpg) ;
+    color: rgb(98, 23, 98);
+    justify-content: center;
+    display: inline-block;
+    min-width: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#container {
+    background-color: rgba(255, 192, 203, 0.5);;
+    width: 90%;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #000;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+
+}
+#titulo {
+    text-align: center;
+    font-family: "Comic Relief", system-ui;
+    color: rgb(122, 59, 122,);
+    text-shadow: 1px 1px 3px #fff;
+    padding: 20px;
+    font-size: 40px;
+
+}
+#descripcion {
+    
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
+}
+input, label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: black;   
+    font-family: inherit;
+}
+fieldset {
+    border: none;
+}
+
+input [type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    }
+
+button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: purple;
+}
+button:hover {
+    background-color: transparent ;
+}

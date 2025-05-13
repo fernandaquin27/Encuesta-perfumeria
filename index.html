@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Formulario perfumeria</title>
+</head>
+<body>
+    <h1 id="titulo">Encuesta sobre perfumeria</h1>
+    <p id="descripcion"><b>¿Cuales son tus gustos sobre fragancias? llena los placeholder con tu informacion</b></p>
+    
+    <div id="container">
+    <form id="survey-form">
+        <label for="nombre" id="label_nombre" required>Nombre:</label>
+        <input type="text" id="nombre" placeholder="i.e.Fernanda Quintero" maxlength="40">
+
+        <label for="edad">Edad (opcional):</label>
+        <input type="number" id="edad" placeholder="naci en 1900.com" min="15" max="85">
+
+        <label for="familia" required="">¿cual es tu familia olfativa preferida?</label>
+        <select id="familia">
+            <option value="Cítrica o Hespéride">Citrica o Hespéride</option>
+            <option value="floral">Floral</option>
+            <option value="amaderada">Amaderada</option>
+            <option value="Fougère">Fougère</option>
+            <option value="chipre">Chipre</option>
+            <option value="Gourmand">Gourmand</option>
+        </select>
+
+        <label>¿Que tipos de fragancias prefieres?</label>
+
+        <fieldset>
+            <label><input type="radio" name="tipo_fragancia" value="femenina" required>Femenina</label>
+            <label><input type="radio" name="tipo" value="masculina" required>Masculina</label>
+            <label><input type="radio" name="tipo" value="unixes" required>Unixes</label>
+        </fieldset>
+
+        <label>¿Que concentraciones utilizas de manera habitual? <br> (selecciona todos los que quieras)</label>
+        <fieldset>
+            <label><input type="checkbox" id="ef" required>Eau Fraiche (EF): 1-3%, duracion corta, ideal para climas calidos</label>
+            <label><input type="checkbox" id="edc" required>Eau de Cologne (EDC): 3-5% duracion moderada, idealpara uso diario</label>
+            <label><input type="checkbox" checked id="edt" required> Eau de Toilette (EDT): 4-8%, duracion media, versatil para diferentes ocasiones</label>
+            <label><input type="checkbox" checked id="parfum" required> Eau de Parfum (EDP): 8-15%, duracion prolongada, para la noche o eventos.</label>
+            <label><input type="checkbox" id="fragancias" required>Parfum (P) o Extrait de Parfum: 15-30%, duracion muy prolongada</label>
+       </fieldset>
+
+        <label for="perfumes">Nombra tres de tus perfumes preferidos</label>
+        <input type="text" id="perfumes" placeholder="i.e: knowing (Estee Lauder), Aromatic Elixir (Clinique) y Coco (Channel)" required>
+    
+    <button type="submit" id="enviar">Enviar</button>
+    </form>
+    </div>
+</body>
+</html>
